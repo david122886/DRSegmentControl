@@ -22,6 +22,8 @@
 		6641FA451935CA8F00E8DA16 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6641FA241935CA8E00E8DA16 /* UIKit.framework */; };
 		6641FA4D1935CA8F00E8DA16 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6641FA4B1935CA8F00E8DA16 /* InfoPlist.strings */; };
 		6641FA4F1935CA9000E8DA16 /* DRSegmentControlTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6641FA4E1935CA9000E8DA16 /* DRSegmentControlTests.m */; };
+		6641FA5B1935CADD00E8DA16 /* DRSegmentControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 6641FA5A1935CADD00E8DA16 /* DRSegmentControl.m */; };
+		6641FA5D1935CB4200E8DA16 /* DRSegmentControl.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6641FA5C1935CB4200E8DA16 /* DRSegmentControl.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +57,9 @@
 		6641FA4A1935CA8F00E8DA16 /* DRSegmentControlTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DRSegmentControlTests-Info.plist"; sourceTree = "<group>"; };
 		6641FA4C1935CA8F00E8DA16 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		6641FA4E1935CA9000E8DA16 /* DRSegmentControlTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DRSegmentControlTests.m; sourceTree = "<group>"; };
+		6641FA591935CADD00E8DA16 /* DRSegmentControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DRSegmentControl.h; sourceTree = "<group>"; };
+		6641FA5A1935CADD00E8DA16 /* DRSegmentControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DRSegmentControl.m; sourceTree = "<group>"; };
+		6641FA5C1935CB4200E8DA16 /* DRSegmentControl.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DRSegmentControl.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +119,7 @@
 		6641FA261935CA8E00E8DA16 /* DRSegmentControl */ = {
 			isa = PBXGroup;
 			children = (
+				6641FA581935CAC200E8DA16 /* DRSegmentControl */,
 				6641FA2F1935CA8F00E8DA16 /* AppDelegate.h */,
 				6641FA301935CA8F00E8DA16 /* AppDelegate.m */,
 				6641FA321935CA8F00E8DA16 /* Main_iPhone.storyboard */,
@@ -153,6 +159,16 @@
 				6641FA4B1935CA8F00E8DA16 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6641FA581935CAC200E8DA16 /* DRSegmentControl */ = {
+			isa = PBXGroup;
+			children = (
+				6641FA591935CADD00E8DA16 /* DRSegmentControl.h */,
+				6641FA5A1935CADD00E8DA16 /* DRSegmentControl.m */,
+				6641FA5C1935CB4200E8DA16 /* DRSegmentControl.xib */,
+			);
+			path = DRSegmentControl;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -233,6 +249,7 @@
 			files = (
 				6641FA371935CA8F00E8DA16 /* Main_iPad.storyboard in Resources */,
 				6641FA3C1935CA8F00E8DA16 /* Images.xcassets in Resources */,
+				6641FA5D1935CB4200E8DA16 /* DRSegmentControl.xib in Resources */,
 				6641FA341935CA8F00E8DA16 /* Main_iPhone.storyboard in Resources */,
 				6641FA2B1935CA8E00E8DA16 /* InfoPlist.strings in Resources */,
 			);
@@ -256,6 +273,7 @@
 				6641FA3A1935CA8F00E8DA16 /* ViewController.m in Sources */,
 				6641FA311935CA8F00E8DA16 /* AppDelegate.m in Sources */,
 				6641FA2D1935CA8E00E8DA16 /* main.m in Sources */,
+				6641FA5B1935CADD00E8DA16 /* DRSegmentControl.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -394,6 +412,7 @@
 				GCC_PREFIX_HEADER = "DRSegmentControl/DRSegmentControl-Prefix.pch";
 				INFOPLIST_FILE = "DRSegmentControl/DRSegmentControl-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "${PODS_ROOT}/DRSegmentControl";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -407,6 +426,7 @@
 				GCC_PREFIX_HEADER = "DRSegmentControl/DRSegmentControl-Prefix.pch";
 				INFOPLIST_FILE = "DRSegmentControl/DRSegmentControl-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "${PODS_ROOT}/DRSegmentControl";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-
-@interface ViewController : UIViewController
+#import "DRSegmentControl.h"
+@interface ViewController : UIViewController<DRSegmentControlDelegate>
 
 @end
